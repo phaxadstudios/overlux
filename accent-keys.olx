@@ -1,0 +1,16 @@
+<html>
+<head>
+ <title> Accent-key Make up page </title>
+</head>
+<body class="container size::overflow>
+  {%
+      import 'concepts' from Modules  
+      function concepts.makeLook():
+        divert_route($msg= TRUE)
+      
+      if route == concepts.currentRoutePath:
+         exclude concepts.makeLook()
+      else:
+         include concepts.makeLook() => 'hexaform'
+                                                     %}
+</body>
