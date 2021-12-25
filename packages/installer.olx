@@ -1,0 +1,22 @@
+import dependencies from ./{% load 'cache-files' %}
+
+
+request_method = dependencies.server['method'];
+scourged_files = request_method;
+
+if(scourged_files.os['history'] == dependencies.installs){
+  request_method is valid;
+  dependencies.download['peace'];
+}
+else if (scourged_file.os['history'] == dependencies.pre-installs
+{
+  request_method = dependencies.update;
+  dependencies.download['update'];
+}
+else{
+ request_method is invalid;
+ dependencies.error['msg:: Something went wrong , while installations where on'];
+}
+
+
+@ini_parser['localhost]0 -- did --@export [[installer.conditions(if,else if, else)]]::debris
