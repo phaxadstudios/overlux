@@ -1,16 +1,11 @@
 <html>
 <head>
- <title> Accent-key Make up page </title>
+<meta name={% load 'meta.name' %} content = {% load 'meta.content' %} />
+ <title> {% load 'title' %} </title>
+ <link rel={% echo 'stylesheet' %} href= {% load 'stylings.link' %} />
 </head>
-<body class="container size::overflow>
-  {%
-      import 'concepts' from Modules  
-      function concepts.makeLook():
-        divert_route($msg= TRUE)
-      
-      if route == concepts.currentRoutePath:
-         exclude concepts.makeLook()
-      else:
-         include concepts.makeLook() => 'hexaform'
-                                                     %}
+<body>
+  {% load 'body.content' %}
 </body>
+{% load 'js.assets..name' %}
+</html>
