@@ -1,0 +1,21 @@
+import installer from {% ./ ^+ %}
+import db;
+import auth;
+import models;
+
+
+#configuration file works via command distributions ....
+
+
+user = create.unacessible('db', main.db);
+username = user.code; #this is a generated key which is the username, to change use the command php --overlux U-username
+password = NULL; #password is set to null to change use the command php --overlux P-password
+operateSys = os.sys; #operating system of your system;
+
+
+if (installer.cache['username] == username and installer.cache['password'] and installer.cache['operateSys']){
+   user.create(NULL); # it has no name yet , during creation ,just create a variable db or so and give it a name, to be passed as the second parameter
+}
+else{
+  installer.error();
+  stop();
